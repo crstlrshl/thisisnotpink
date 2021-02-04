@@ -1,0 +1,173 @@
+
+/*this removes underlines on all links*/
+a:link{text-decoration:none;}
+
+.container{
+  height: 60vh;
+  width: 56vw;
+  margin: 12vh auto;
+  position: relative;
+}
+
+
+body{
+  height: 100vh;
+  margin: 0;
+  font-family:'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 60px;
+  background-color: black;
+}
+
+p{
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+}
+
+#backToStart{
+  height: 60vh;
+  width: 60vw;
+  margin: 25vh auto;
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+
+#backToStart:hover{
+  animation: glow 3s infinite, spin 2s linear infinite;
+}
+
+div{
+  color: white;
+  margin-left: 40px;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+#huh{
+  color: black;
+  margin-left: 26px;
+  margin-right: 8px;
+  font-style: italic;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+nav a{
+  color: pink;
+  margin-left: 40px;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 100px;
+
+}
+
+/*div a{
+  color: black;
+  margin-left: 40px;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 80px;
+
+}*/
+
+nav a:hover{
+  /*color:black;*/
+  text-decoration: line-through;
+  color: pink;
+  /*animation: glow 1s infinite;
+  text-shadow: -5px 3px 0px magenta;*/
+  text-shadow: 2px -1px 20px magenta;
+}
+
+#huh:hover{
+  color: pink;/*
+  text-shadow: -5px 3px 0px magenta;*/
+  animation: glow 0.1s infinite;
+  text-shadow: 2px -1px 20px magenta;
+
+}
+
+/*.animatedDot{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: pink;
+  transform-origin: 200px;
+  animation: spin 6s linear infinite;
+}*/
+
+.movingBackgrounds{
+    width: 60px;
+    height: 60px;
+    background-color: pink;
+    position: relative;
+    animation: movingBackgrounds 6s linear 2s infinite alternate, spin 4s linear infinite reverse;
+  }
+  .movingBackgrounds2{
+      width: 8px;
+      height: 34px;
+      background-color: pink;
+      position: relative;
+      animation: movingBackgrounds2 6s linear 2s infinite alternate, spin 18s linear infinite reverse;
+    }
+
+    .movingBackgrounds3{
+      width: 60px;
+      height: 60px;
+      background-color: pink;
+      position: relative;
+      border-radius: 50%;
+      animation: movingBackgrounds3 6s linear 2s infinite alternate, spin 2s linear infinite reverse;
+    }
+
+
+@keyframes glow {
+  0% {opacity: 0.3}
+  90% {opacity: 0.1}
+  90% {opacity: 0}
+  0% {opacity: 1}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+@keyframes movingBackgrounds {
+          0%   {background-color:magenta; left:0px; top:0px;}
+          25%  {background-color:pink; left:400px; top:0px;}
+          50%  {background-color:magenta; left:400px; top:400px;}
+          75%  {background-color:pink; left:0px; top:400px;}
+          100% {background-color:magenta; left:0px; top:0px;}
+        }
+
+
+        @keyframes movingBackgrounds2 {
+                  0%   {background-color:magenta; left:0px; top:0px;}
+                  25%  {background-color:pink; left:0px; top:200px;}
+                  50%  {background-color:magenta; left:0px; top:200px;}
+                  75%  {background-color:pink; left:200px; top:0px;}
+                  100% {background-color:magenta; left:0px; top:0px;}
+                }
+
+                @keyframes movingBackgrounds3{
+                          0%   {background-color:magenta; right:0px; top:0px;}
+                          25%  {background-color:pink; right:400px; top:0px;}
+                          50%  {background-color:magenta; right:400px; top:0px;}
+                          75%  {background-color:pink; right:0px; top:400px;}
+                          100% {background-color:magenta; right:0px; top:0px;}
+                        }

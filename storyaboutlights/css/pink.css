@@ -1,0 +1,142 @@
+
+/*this removes underlines on all links*/
+
+
+.container{
+  height: 46vh;
+  width: 46vw;
+  margin: 4vh auto;
+  position: relative;
+}
+
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+a:visited {
+  text-decoration: none;
+  color: magenta;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+h1{
+  font-family:'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 80px;
+  background-color: black;
+  border-radius: 0px 0px 0px 0px;
+  padding-left: 14px;
+  padding-top: 0px;
+}
+
+h2{
+  font-family:'Oswald', sans-serif;
+  font-size: 34px;
+  padding-top: 22px;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  color: black;
+  line-height: 1.2;
+
+}
+
+body{
+  height: 2vh;
+  margin: 0;
+  font-family:'Oswald', sans-serif;
+  font-style: normal;
+  font-size: 58px;
+  background-color: white;
+}
+
+p{
+  font-size: 26px;
+  font-weight: 200;
+  opacity: 0.9;
+  color: black;
+}
+
+#backToStart{
+  height: auto;
+  width: 240px;
+  margin-left:0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 44px;
+  /*margin: 25vh auto;*/
+  display: block;
+  font-size: 24px;
+  color: black;
+  display: inline;
+  margin-right: 40px;
+}
+
+#backToStart:hover{
+  animation: glow 2s infinite;
+}
+
+#rgb{
+  height: auto;
+  width: 240px;
+  margin-left:0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 44px;
+  margin-top: 10px;
+  /*margin: 25vh auto;*/
+  display: block;
+  font-size: 24px;
+  color: black;
+  display: inline;
+}
+
+#rgb:hover{
+  color: magenta;
+}
+
+div{
+  color: white;
+  margin-left: 40px;
+  margin-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+
+@keyframes glow {
+  0% {opacity: 0.3}
+  90% {opacity: 0.1}
+  90% {opacity: 0}
+}
+@keyframes spin {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+.welcomeImage{
+  height: 200px;
+  width: 200px;
+  background-position: right;
+  background-image: url('https://www.pngarts.com/files/5/Pink-Singer-PNG-Picture.png');
+  background-size:cover;
+  margin-bottom: 0;
+  margin-top:0;
+  border-radius: 50%;
+  opacity:0;
+  animation: glow 2.5s;
+  position: center;
+}

@@ -1,0 +1,55 @@
+
+body{
+  margin:0;
+}
+
+section{
+  width: 100%;
+  /*center it by saying it is x on each side*/
+  margin: 0 auto;
+  margin-top: 0px;
+}
+
+.red{
+  border:none;
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  float: left;
+}
+
+.green{
+  height: 100vh;
+  width: 100vw;
+  background-color: green;
+  float:left;
+}
+
+.blue{
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  float: left;
+}
+
+#backToStart{
+  height: 60vh;
+  width: 60vw;
+  margin: 25vh auto;
+  position: relative;
+  font-size: 24px;
+  color: white;
+}
+
+#backToStart:hover{
+  animation: glow 3s infinite, spin 2s linear infinite;
+}
+
+
+.rgbMove{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    animation: rgbMove 6s linear 2s infinite alternate;
+  }
